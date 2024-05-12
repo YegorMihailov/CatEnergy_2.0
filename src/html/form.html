@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="./../css/main.css">
     <title>HTML Academy: Кэт энерджи Подбор программы</title>
   </head>
   <body class="page__body">
@@ -43,17 +44,17 @@
           <div class="program-selection__about-user">
             <label for="username" class="program-selection__text-label">
               Имя:*
-              <input class="program-selection__text-input" type="text" name="username" id="username" placeholder="Барсик">
+              <input class="program-selection__text-input program-selection__field" type="text" name="username" id="username" placeholder="Барсик">
             </label>
     
             <label for="weight" class="program-selection__text-label">
               Вес (кг):*
-              <input class="program-selection__text-input" type="text" name="weight" id="weight"  placeholder="7">
+              <input class="program-selection__text-input program-selection__field" type="text" name="weight" id="weight"  placeholder="7">
             </label>
     
             <label for="age" class="program-selection__text-label">
               Возраст (лет):
-              <input class="program-selection__text-input" type="text" name="age" id="age"  placeholder="7">
+              <input class="program-selection__text-input program-selection__field" type="text" name="age" id="age"  placeholder="7">
             </label>
             <!-- add spans like lower -->
           </div>
@@ -79,23 +80,27 @@
             </p>
   
             <label class="program-selection__text-label" for="email">
-              <input class="program-selection__text-input--email" type="email" name="email" id="email" placeholder="KUKLACHEV@GMAIL.COM">
+              E-mail:*
+              <input class="program-selection__text-input--email program-selection__field" type="email" name="email" id="email" placeholder="KUKLACHEV@GMAIL.COM">
+              
             </label>
   
-            <label class="program-selection__text-label" for="tel">
-              <input class="program-selection__text-input--tel" type="tel" name="tel" id="tel" placeholder="8 (960) 900-60-90">
+            <label class="program-selection__text-label" for="tel">  
+              Телефон:*
+              <input class="program-selection__text-input--tel program-selection__field" type="tel" name="tel" id="tel" placeholder="8 (960) 900-60-90">
+              
             </label>
           </div>
   
           <div class="program-selection__comment">
-            <p class="program-selection__title title">Комментарий</p>
+            <p class="program-selection__contacts-title title">Комментарий</p>
             <label for="comment">
-              <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
+              <textarea class="program-selection__field" name="comment" id="comment" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
             </label>
           </div>
   
           <div class="program-selection__additional-products">
-            <p class="program-selection__title title">Дополнительно</p>
+            <p class="program-selection__contacts-title title">Дополнительно</p>
             <label class="program-selection__checkbox-label" for="sweetener">
               <span class="program-selection__additional-item">Сахарозаменитель</span>
               <input class="program-selection__checkbox-input" name="sweetener" id="sweetener" type="checkbox">

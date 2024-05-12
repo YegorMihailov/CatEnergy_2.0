@@ -13,7 +13,7 @@ const babel = require('gulp-babel');
 const imagemin = require('gulp-imagemin');
 const changed = require('gulp-changed');
 const typograf = require('gulp-typograf');
-const svgsprite = require('gulp-svg-sprite');
+// const svgsprite = require('gulp-svg-sprite');
 const replace = require('gulp-replace');
 
 gulp.task('clean:dev', function (done) {

@@ -238,5 +238,9 @@
 			"<img src=\"./../img${1:/}\" srcset=\"./../img${1:/}\" alt=\"${2:Alt}\">"
 		],
 		"description": "Image srcset"
+	},
+	"List style none": {
+		"prefix": "lsn",
+		"body": ["list-style: none;"]
 	}
 }

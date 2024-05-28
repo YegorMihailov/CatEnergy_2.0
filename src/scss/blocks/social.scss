@@ -1,0 +1,42 @@
+.social {
+    width: 130px;
+    margin: auto;
+}
+
+.social__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    
+    list-style: none;
+
+    padding: 0;
+}
+
+.social__item {
+    width: 25px;
+    height: 25px;
+}
+
+// .social__link 
+
+.social__item--vkontankte {
+    background-image: url(./../../img/svgicons/icon-vk.svg);
+    background-repeat: no-repeat;
+}
+
+.social__item--instagram {
+    background-image: url(./../../img/svgicons/icon_insta.svg);
+    background-repeat: no-repeat;
+}
+
+.social__item--facebook {
+    background-image: url(./../../img/svgicons/icon-fb.svg);
+    background-repeat: no-repeat;
+}
+
+@media (min-width: $tablet-size) {
+    .social {
+        margin: 0;
+    }
+}

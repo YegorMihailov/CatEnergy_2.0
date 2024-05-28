@@ -1,23 +1,130 @@
 .announcement {
+    width: 100%;
     color: #fff;
     background-image: url(./../../img/bg-mobile.jpg);
     background-repeat: no-repeat;
+    background-color: #66a83d;
+    background-position: top center;
+    
+}
+
+.announcement h2 {
+    font-weight: normal;
+}
+
+.announcement__wrapper {
+    width: 280px;
+    // display: flex;
+    // flex-direction: column;
+    margin: auto;
+    text-align: center;
+}
+
+.announcement__text-wrapper {
+    display: flex;
+    flex-direction: column;
 }
 
 .announcement__title {
     font-size: 36px;
+    margin: 0;
+    line-height: 100%;
+    padding-top: 20px;
+    padding-bottom: 10px;
 }
 
 .announcement__subtitle {
     font-size: 14px;
     text-transform: uppercase;
     
+    padding-bottom: 10px;
 }
 
+// .announcement__img {
+//     vertical-align: bottom;
+// }
+
 .announcement__link {
+    width: 280px;
+    padding: 10px 0;
+
     font-size: 14px;
     text-transform: uppercase;
     text-decoration: none;
     color: #fff;
+    background-color: #68B738;
+    order: 1;
+    text-align: center;
 }
 
+@media (min-width: $tablet-size) {
+    .announcement {
+        
+        color: #000;
+        background-image: url();
+        background-color: #fff;
+        text-align: left;
+        
+    }
+
+    .announcement__wrapper {
+        width: 710px;
+        height: 810px;
+        margin: auto;
+        text-align: left;
+
+        padding-left: 75px;
+        background-image: url(./../../img/announcement-tablet-pro.png);
+        background-repeat: no-repeat;
+        background-position: 50% 90%;
+    }
+
+    .announcement__title {
+        font-size: 60px;
+    }
+
+    .announcement__link {
+        width: 244px;
+        margin-top: 10px;
+        
+        font-size: 20px;
+        
+        order: 0;
+    }
+
+    .announcement__subtitle {
+        padding: 0;
+    }
+
+    .announcement__img {
+        visibility: hidden;
+    }
+}
+
+@media (min-width: $laptop-size) {
+    .announcement__wrapper {
+        width: 920px;
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+
+        padding-left: 0;
+        padding-top: 30px;
+        background-image: url(./../../img/announcement-laptop-pro.png);
+        background-repeat: no-repeat;
+        background-position: 100% 0%;
+    }
+    
+    .announcement__text-wrapper {
+        padding-right: 20px;
+    }
+
+    .announcement__link {
+        width: 244px;
+        margin-top: 10px;
+        
+        color: #fff;
+        
+
+    }
+}

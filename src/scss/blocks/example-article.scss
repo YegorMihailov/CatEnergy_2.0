@@ -1,5 +1,13 @@
 .example-article {
+    
+    
+
     background-color: #EAEAEA;
+}
+
+.example-article__wrapper {
+    width: 280px;
+    margin: auto;
 }
 
 .example-article__title {
@@ -12,33 +20,83 @@
     color: #444;
 }
 
-.example-article__characteristic-list 
+// .example-article__characteristic-list 
 
-.characteristic-list {}
 
-.characteristic-list__term {
-    font-size: 24px;
-}
-
-.characteristic-list__description {
-    font-size: 12px;
-    color: #444;
-}
 
 .example-article__info {
     font-size: 14px;
 }
 
-.example-article__img {}
+// .example-article__img {}
 
-.example-article__slider {}
+// .example-article__slider {}
 
-.example-slider {}
+// .example-slider {}
 
 .example-slider__text {
     font-size: 16px;
 } 
 
-.example-slider__toggle {} 
+// .example-slider__toggle {} 
 
+@media (min-width: $tablet-size) {
+    .example-article {
+        background-color: #fff;
+    }
 
+    .example-article__wrapper {
+        width: 710px;
+    }
+    
+    .example-article__title {
+        font-size: 60px;
+    }
+
+    .example-article__description {
+        font-size: 16px;
+    }
+
+    .example-article__info {
+        font-size: 20px;
+    }
+
+    .example-slider__text {
+        font-size: 20px;
+    }
+
+    .example-article__list-wrapper {
+        display: flex;
+        width: 710px;
+        justify-content: space-between;
+    }
+
+    .example-article__characteristic-list {
+
+    }
+}
+
+@media (min-width: $laptop-size) {
+    .example-article__wrapper {
+        width: 1264px;
+        display: flex;
+        justify-content: space-between;
+        margin: auto;
+    }
+    .example-article__content-wrapper {
+        width: 440px;
+        display: flex;
+        flex-direction: column;
+    }
+    .example-article__image-wrapper {
+        width: 690px;
+    }
+
+    .example-article__list-wrapper {
+        flex-direction: column;
+    }
+
+    .example-article__description {
+        
+    }
+}

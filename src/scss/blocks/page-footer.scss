@@ -1,3 +1,65 @@
 .page-footer {
+    width: 100%;
     background-color: #F2F2F2;
 }
+
+.page-footer__wrapper {
+    width: 282px;
+    margin: auto;
+
+    text-align: center;
+}
+
+@media (min-width: $tablet-size) {
+    .page-footer__wrapper {
+        display: flex;
+        width: 710px;
+        justify-content: space-between;
+    }
+    .page-footer__copyright {
+        width: 165px;
+    }
+}
+
+@media (min-width: $laptop-size) {
+    .page-footer__wrapper {
+        width: 1220px;
+    }
+}
+
+.page-footer__logo-text {
+    width: 128px;
+    // outline: 2px solid red;
+}
+
+// .main-logo 
+
+.page-footer__social {
+    // outline: 2px solid red;
+}
+
+// .social 
+
+// .social__list {
+    
+// }
+
+// .social__item 
+
+// .social__item--vkontankte 
+
+// .social__link 
+
+// .visually-hidden 
+
+// .social__item--instagram 
+
+// .social__item--facebook 
+
+.page-footer__copyright {
+    // outline: 2px solid red;
+}
+
+// .copyright 
+
+// .copyright__link 

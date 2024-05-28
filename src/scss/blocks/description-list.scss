@@ -1,0 +1,28 @@
+.description-list__item-wrapper {
+    display: flex;
+    width: 138px;
+    justify-content: space-between;
+//     text-align: center;
+}
+
+.description-list__term {
+    font-size: 12px;
+    margin-right: 20px;
+}
+
+.description-list__definition {
+    margin: 0;
+}
+
+@media (min-width: $tablet-size) {
+    .description-list__item-wrapper {
+        width: 252px;
+    }
+}
+
+@media (min-width: $tablet-size) {
+    .description-list__item-wrapper {
+        width: 166px;
+        margin: auto;
+    }
+}

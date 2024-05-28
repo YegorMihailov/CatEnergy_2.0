@@ -1,0 +1,26 @@
+// .characteristic-list {}
+
+.characteristic-list__term {
+    font-size: 24px;
+}
+
+.characteristic-list__description {
+    font-size: 12px;
+    color: #444;
+}
+
+@media (min-width: $tablet-size) {
+    .characteristic-list__term {
+        font-size: 30px;
+    }
+    
+    .characteristic-list__description {
+        font-size: 16px;
+    }
+    
+    .characteristic-list {
+        width: 366px;
+        display: flex;
+        justify-content: space-between;
+    }
+}

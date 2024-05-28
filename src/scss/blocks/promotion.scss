@@ -1,0 +1,51 @@
+// .additional-products__promotion 
+
+.promotion {
+    width: 280px;
+    height: 289px;
+    margin: auto;
+
+    background-color: #68B738;
+    background-image: url(./../../img/gift-photo-mobile.jpg);
+    background-repeat: no-repeat;
+} 
+
+.promotion__text {
+    width: 161px;
+    margin: auto;
+    text-align: center;
+    padding-top: 185px;
+}
+
+@media (min-width: $tablet-size) {
+    .promotion {
+        width: 710px;
+        height: 200px;
+        background-image: url(./../../img/gift-photo-tablet.jpg);
+
+        padding-top: 70px;
+        padding-left: 420px;
+    }
+
+    .promotion__text {
+        padding: 0;
+        text-align: left;
+    }
+}
+
+@media (min-width: $laptop-size) {
+    .promotion {
+        width: 245px;
+        height: 289px;
+
+        background-image: url(./../../img/gift-photo-desktop.jpg);
+        // padding-top: 185px;
+        
+        padding: 0;
+    }
+
+    .promotion__text {
+        padding-top: 185px;
+        text-align: center;
+    }
+}

@@ -1,4 +1,13 @@
+.more {
+    width: 280px;
+    text-align: center;
+
+    padding-top: 90px;
+}
+
 .more__title {
+    
+
     font-size: 16px;
     text-transform: uppercase;
     color: #111;
@@ -10,7 +19,52 @@
 }
 
 .more__link {
+    display: block;
+    width: 280px;
+
     font-size: 16px;
     text-transform: uppercase;
     color: #444;
+    background-color: #f2f2f2;
+    line-height: 40px;
+    text-decoration: none;
 } 
+
+@media (min-width: $tablet-size) {
+    .more {
+        width: 325px;
+
+        padding-top: 0;
+    }
+
+    .more__title {
+        width: 134px;
+        margin: auto;
+        margin-bottom: 20px;
+        padding-top: 135px;
+
+        font-size: 20px;
+    }
+
+    .more__subtitle {
+        width: 167px;
+        margin: auto;
+        margin-bottom: 85px;
+
+        font-size: 16px;
+    }
+
+    .more__link {
+        margin: auto;
+    }
+}
+
+@media (min-width: $laptop-size) {
+    .more {
+        width: 245px;
+    }
+
+    .more__link {
+        width: 168px;
+    }
+}

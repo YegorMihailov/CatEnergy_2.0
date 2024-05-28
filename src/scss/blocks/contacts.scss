@@ -1,17 +1,30 @@
 .contacts {
+    width: 100%;
+    background-color: #f2f2f2;
+}
 
+.contacts__wrapper {
+    width: 280px;
+    margin: auto;
 }
 
 
-.contacts__info {}
+.contacts__info {
+    display: flex;
+    justify-content: space-between;
+}
 
 .contacts__title {
+    width: 140px;
+
     font-size: 16px;
     text-transform: uppercase;
     color: #111;
 }
 
 .contacts__text {
+    width: 130px;
+
     font-size: 14px;
     color: #444;
 }
@@ -19,3 +32,17 @@
 .contacts__map {}
 
 .map {}
+
+@media (min-width: $tablet-size) {
+    .contacts__wrapper {
+        width: 625px;
+    }
+
+    .contacts__title {
+        font-size: 20px;
+    }
+
+    .contacts__text {
+        font-size: 16px;
+    }
+}
